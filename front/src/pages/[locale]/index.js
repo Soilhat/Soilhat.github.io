@@ -32,9 +32,9 @@ export default function Index({translations, locale, locales}) {
             {
               locales.map((other_locale)=>{
                 if (other_locale !== locale){
-                  return <link rel="alternate" hreflang={other_locale} href={"/"+other_locale} />
+                  return <link rel="alternate" key={locale} hrefLang={other_locale} href={"/"+other_locale} />
                 }
-                return <div/>
+                return <link key={locale}/>
               })
             }
         </Head>
