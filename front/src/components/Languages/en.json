@@ -1,0 +1,11 @@
+{
+    "job" : "Python Developer",
+    "resume" : "resume",
+    "menu" : {
+        "Home" : "Home"
+    },
+    "AboutMe" : {
+        "title" :"About Me",
+        "about" : "<p>I'm a Developer from Paris, France, working in web development and innovation (Data Analysis, Blochain, etc.).</p><p>My job is to build your website so that it is functional and user-friendly. I also build dashboards easy-to-use gathering all informations you want and need.</p>"
+    }
+}

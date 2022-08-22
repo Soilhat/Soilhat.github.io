@@ -1,0 +1,11 @@
+{
+    "job" : "Développeuse Python",
+    "resume": "CV",
+    "menu" : {
+        "Home" : "Accueil"
+    },
+    "AboutMe" : {
+        "title" :"A propos",
+        "about" : "<p>Je suis une Developpeuse de Paris, France, travaillant dans le développement web et l'innovation (Data Analysis, Blockchain, etc.).</p><p>Mon travail est de construire des outils fonctionnels et user-friendly. Je construit également des dashboards facile à utiliser qui regroupent toutes les informations que vous voulez et/ou dont vous avez besoin.</p>"
+    }
+}

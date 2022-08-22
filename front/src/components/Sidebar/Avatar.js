@@ -1,13 +1,12 @@
 import React from 'react';
+import Image from 'next/image'
 
 export default class Avatar extends React.Component{
     render(){
+        console.log(this.props.src)
         return(
-            <svg xmlns="http://www.w3.org/2000/svg" className="avatar avatar--180" viewBox="0 0 188 188">
-                <g className="avatar__box">
-                    <image xlinkHref={this.props.src} height="100%" width="100%" alt="avatar"/>
-                </g>
-            </svg>
-        )
+            <span className="avatar avatar--180">
+            <Image src={this.props.src} className="avatar avatar--180" viewBox="0 0 188 188" />
+        </span>)
     }
 }
