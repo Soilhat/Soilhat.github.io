@@ -59,28 +59,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20' # Use a recent LTS version
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build React application
-        run: npm run build
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      # Upload the 'build' folder as an artifact. 
-      # This is the directory created by 'npm run build'.
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './build'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
