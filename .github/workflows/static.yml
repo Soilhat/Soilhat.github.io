@@ -1,5 +1,5 @@
-# Simple workflow for deploying a React application to GitHub Pages
-name: Deploy React App to Pages
+# Simple workflow for deploying a React application from a subfolder to GitHub Pages
+name: Deploy React App from Subfolder to Pages
 
 on:
   # Runs on pushes targeting the default branch (e.g., 'main')
@@ -34,6 +34,32 @@ jobs:
 
       # Sets up Node.js to install dependencies and build the app
       - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a recent LTS version
+
+      - name: Install dependencies
+        run: npm install
+        # The working-directory option tells GitHub Actions to run the command inside the 'front' folder.
+        working-directory: './front'
+
+      - name: Build React application
+        run: npm run build
+        working-directory: './front'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Upload the 'build' folder from the 'front' subfolder as an artifact.
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './front/build'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
         uses: actions/setup-node@v4
         with:
           node-version: '20' # Use a recent LTS version
