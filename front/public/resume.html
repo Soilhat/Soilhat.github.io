@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soilhat Mohamed - CV</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            color: #374151; /* Dark gray text */
+        }
+        .cv-section-title {
+            position: relative;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+        }
+        .cv-section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 4px;
+            background-color: #4f46e5; /* A primary color */
+            border-radius: 2px;
+        }
+        .icon {
+            display: inline-block;
+            width: 1.25rem;
+            height: 1.25rem;
+            fill: currentColor;
+            margin-right: 0.5rem;
+            vertical-align: middle;
+        }
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="container mx-auto p-4 md:p-8 max-w-4xl bg-white shadow-2xl rounded-xl">
+
+        <!-- Header Section -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-2">Soilhat MOHAMED</h1>
+            <p class="text-xl md:text-2xl font-light text-gray-600 mb-4">Python Full-Stack Developer</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                <a href="mailto:soilhatmohamed@gmail.com" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                    </svg>
+                    soilhatmohamed@gmail.com
+                </a>
+                <a href="https://linkedin.com/in/soilhatm" target="_blank" class="text-gray-600 hover:text-indigo-600 transition duration-300 flex items-center">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    linkedin.com/in/soilhatm
+                </a>
+            </div>
+        </div>
+
+        <!-- Horizontal line separator -->
+        <hr class="border-t-2 border-gray-200 mb-8">
+
+        <!-- Professional Summary Section -->
+        <div class="mb-8">
+            <h2 class="cv-section-title">Professional Summary</h2>
+            <p class="text-gray-700 leading-relaxed text-base">
+                Python Full-Stack Developer with 5+ years of experience in building web applications and implementing CI/CD pipelines. Proficient in Python (Flask), React.js, and SQL, with a strong background in data engineering and machine learning. Seeking to leverage technical skills and problem-solving abilities to contribute to innovative projects.
+            </p>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="mb-8">
+            <h2 class="cv-section-title">Work Experience</h2>
+            <div class="mb-6">
+                <div class="company-header">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">Full-Stack Developer (via Aurexia)</h3>
+                    <p class="text-gray-500 font-light text-sm md:text-base">April 2021 – Present</p>
+                </div>
+                <p class="text-gray-600 mb-2 font-medium">Crédit Agricole CIB, Montrouge, France</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                    <li>Developed a web-based application for senior management using Flask and React.js.</li>
+                    <li>Configured and managed CI/CD pipeline with GitLab, Kubernetes, and SonarQube.</li>
+                    <li>Created and optimized an ETL script to perform data engineering from various sources into MS SQL and ELK databases.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <div class="company-header">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">Data Scientist Consultant | Developer</h3>
+                    <p class="text-gray-500 font-light text-sm md:text-base">September 2019 – Present</p>
+                </div>
+                <p class="text-gray-600 mb-2 font-medium">Aurexia, Paris, France</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                    <li>Designed and implemented an email sentiment analysis tool for Outlook using Python and VBA.</li>
+                    <li>Developed a decentralized web application to manage an Ethereum Blockchain test token (Solidity, React.js).</li>
+                </ul>
+            </div>
+            
+            <div class="mb-6">
+                <div class="company-header">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">Data Scientist Intern</h3>
+                    <p class="text-gray-500 font-light text-sm md:text-base">April 2019 – August 2019</p>
+                </div>
+                <p class="text-gray-600 mb-2 font-medium">Digora, Levallois-Perret, France</p>
+                <ul class="list-disc list-inside space-y-1 text-gray-700">
+                    <li>Conducted research on machine learning technologies (TensorFlow, Pytorch).</li>
+                    <li>Developed a Proof of Concept (PoC) for data correlation.</li>
+                    <li>Utilized Azure Machine Learning Studio for Time Series Data Analysis and Prediction.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Education Section -->
+        <div class="mb-8">
+            <h2 class="cv-section-title">Education</h2>
+            <div class="mb-4">
+                <div class="company-header">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">Computer Science Engineer Degree</h3>
+                    <p class="text-gray-500 font-light text-sm md:text-base">February 2016 – August 2020</p>
+                </div>
+                <p class="text-gray-600 font-medium">ESILV, Courbevoie, France</p>
+            </div>
+            <div class="mb-4">
+                <div class="company-header">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">Digital Engineering Manager</h3>
+                    <p class="text-gray-500 font-light text-sm md:text-base">September 2019 – August 2020</p>
+                </div>
+                <p class="text-gray-600 font-medium">IIM, Courbevoie, France</p>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="mb-8">
+            <h2 class="cv-section-title">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p class="text-gray-800 font-semibold">Programming Languages:</p>
+                    <p class="text-gray-700">Python, Javascript, SQL</p>
+                </div>
+                <div>
+                    <p class="text-gray-800 font-semibold">Frameworks/Libraries:</p>
+                    <p class="text-gray-700">Flask, React.js, Pandas, PyTorch, TensorFlow</p>
+                </div>
+                <div>
+                    <p class="text-gray-800 font-semibold">Databases:</p>
+                    <p class="text-gray-700">Elasticsearch, MS SQL</p>
+                </div>
+                <div>
+                    <p class="text-gray-800 font-semibold">DevOps/Tools:</p>
+                    <p class="text-gray-700">Git, Docker, Kubernetes, GitLab, SonarQube, Jira</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Languages Section -->
+        <div>
+            <h2 class="cv-section-title">Languages</h2>
+            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                <li>French: Native</li>
+                <li>English: Fluent (TOEIC 915)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
